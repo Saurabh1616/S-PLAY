@@ -91,13 +91,6 @@
       border-color: rgba(139, 92, 246, 0.5);
     }
 
-    .glass-modal {
-      background: rgba(16, 12, 30, 0.96);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid rgba(139, 92, 246, 0.3);
-    }
-
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -163,18 +156,6 @@
         </div>
       </div>
 
-      <!-- Live Online Stats Pill -->
-      <div class="hidden md:flex items-center gap-2 text-xs text-brand-textMuted">
-        <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#130f24] border border-purple-900/40">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Online: <strong class="text-gray-200 font-mono font-bold" id="liveUserCount">3,842</strong></span>
-        </div>
-        <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#130f24] border border-purple-900/40">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-purple-400"></i>
-          <span>100% Free & Verified</span>
-        </div>
-      </div>
-
       <!-- Quick Search Bar in Header -->
       <div class="relative flex-grow max-w-md hidden sm:block">
         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-purple-400 pointer-events-none"></i>
@@ -207,11 +188,11 @@
           <i data-lucide="chevron-down" class="w-3 h-3 absolute right-2 top-1/2 -translate-y-1/2 text-purple-400 pointer-events-none"></i>
         </div>
 
-        <!-- Add Site Button -->
-        <button onclick="app.openAddModal()" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold shadow-glow-purple transition active:scale-95 border border-purple-400/30 flex-shrink-0">
-          <i data-lucide="plus" class="w-3.5 h-3.5"></i>
-          <span>Add Site</span>
-        </button>
+        <!-- GitHub Handle Link -->
+        <a href="https://github.com/Saurabh1616" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold shadow-glow-purple transition active:scale-95 border border-purple-400/30 flex-shrink-0">
+          <i data-lucide="github" class="w-3.5 h-3.5"></i>
+          <span>GitHub</span>
+        </a>
       </div>
 
     </div>
@@ -243,31 +224,6 @@
             </div>
             <span id="badge-favorites" class="text-[11px] px-2 py-0.5 rounded-full font-mono bg-[#090712] text-yellow-400 border border-yellow-500/30">0</span>
           </button>
-        </div>
-      </div>
-
-      <!-- JOIN US (Discord & Reddit) -->
-      <div class="glass-card rounded-2xl p-4 space-y-3">
-        <div class="text-[11px] font-mono uppercase font-bold tracking-wider text-brand-textMuted px-2">
-          Join Us
-        </div>
-        
-        <div class="space-y-2">
-          <!-- Discord Button -->
-          <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-[#5865F2]/15 hover:bg-[#5865F2]/25 border border-[#5865F2]/30 text-white text-xs font-bold transition group">
-            <svg class="w-5 h-5 text-[#5865F2] fill-current group-hover:scale-110 transition" viewBox="0 0 24 24">
-              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-            </svg>
-            <span>DISCORD</span>
-          </a>
-
-          <!-- Reddit Button -->
-          <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-[#FF4500]/15 hover:bg-[#FF4500]/25 border border-[#FF4500]/30 text-white text-xs font-bold transition group">
-            <svg class="w-5 h-5 text-[#FF4500] fill-current group-hover:scale-110 transition" viewBox="0 0 24 24">
-              <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.688-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.197-2.512-.73a.326.326 0 0 0-.232-.095z"/>
-            </svg>
-            <span>reddit</span>
-          </a>
         </div>
       </div>
 
@@ -307,64 +263,6 @@
 
     </main>
 
-  </div>
-
-  <!-- ==================== ADD SITE MODAL ==================== -->
-  <div id="addSiteModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-200">
-    <div class="glass-modal rounded-3xl w-full max-w-lg p-6 shadow-2xl space-y-4" id="modalCard">
-      <div class="flex items-center justify-between border-b border-purple-900/40 pb-3">
-        <div class="flex items-center gap-2.5">
-          <div class="p-2 rounded-xl bg-purple-950 text-purple-300">
-            <i data-lucide="plus-circle" class="w-5 h-5"></i>
-          </div>
-          <div>
-            <h3 class="text-base font-bold text-white">Add Site to SR Play</h3>
-            <p class="text-[11px] text-brand-textMuted">Save a custom streaming site to your vault</p>
-          </div>
-        </div>
-        <button onclick="app.closeAddModal()" class="text-brand-textMuted hover:text-white p-1.5 rounded-lg hover:bg-white/5 transition">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-      <form id="addSiteForm" onsubmit="app.handleAddSiteSubmit(event)" class="space-y-3.5 text-xs">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label class="block font-bold text-gray-200 mb-1">Site Name *</label>
-            <input type="text" id="formTitle" required placeholder="e.g. MyStream, AniHub" class="w-full bg-[#0a0715] text-gray-100 placeholder-brand-textMuted/50 rounded-xl px-3 py-2 border border-purple-900/60 focus:border-purple-500 focus:outline-none transition" />
-          </div>
-          <div>
-            <label class="block font-bold text-gray-200 mb-1">Category *</label>
-            <select id="formCategory" required class="w-full bg-[#0a0715] text-gray-100 rounded-xl px-3 py-2 border border-purple-900/60 focus:border-purple-500 focus:outline-none transition cursor-pointer">
-              <option value="movies">🎬 Movies & Shows</option>
-              <option value="anime">⚡ Anime</option>
-              <option value="manga">📖 Manga & Comics</option>
-              <option value="livetv">📺 Live TV & Sports</option>
-              <option value="paid">💎 Paid Services</option>
-              <option value="apps">🛠️ Apps & Tools</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label class="block font-bold text-gray-200 mb-1">Website URL *</label>
-          <input type="text" id="formUrl" required placeholder="https://example.com" class="w-full bg-[#0a0715] text-gray-100 placeholder-brand-textMuted/50 rounded-xl px-3 py-2 border border-purple-900/60 focus:border-purple-500 focus:outline-none transition font-mono text-xs" />
-        </div>
-
-        <div>
-          <label class="block font-bold text-gray-200 mb-1">Region</label>
-          <select id="formRegion" class="w-full bg-[#0a0715] text-gray-100 rounded-xl px-3 py-2 border border-purple-900/60 focus:border-purple-500 focus:outline-none transition cursor-pointer">
-            <option value="global">🌐 Global / Worldwide</option>
-            <option value="in">🇮🇳 India & Desi</option>
-          </select>
-        </div>
-
-        <div class="flex items-center justify-end gap-2 pt-2 border-t border-purple-900/40">
-          <button type="button" onclick="app.closeAddModal()" class="px-3.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-brand-textMuted hover:text-white transition">Cancel</button>
-          <button type="submit" class="px-4 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold transition shadow-glow-purple">Save Site</button>
-        </div>
-      </form>
-    </div>
   </div>
 
   <!-- Toast Notification -->
@@ -1953,14 +1851,12 @@
       currentCategory: 'all',
       searchQuery: '',
       currentRegion: 'all',
-      liveUserBase: 3842,
 
       init() {
         this.loadStorage();
         this.renderSidebar();
         this.renderQuickAccess();
         this.renderFeed();
-        this.startLiveTicker();
         this.setupKeyboardShortcuts();
 
         if (window.lucide) {
@@ -1991,15 +1887,6 @@
 
       saveStorage() {
         localStorage.setItem('srplay_sites_v4', JSON.stringify(this.sites));
-      },
-
-      startLiveTicker() {
-        setInterval(() => {
-          const delta = Math.floor(Math.random() * 5) - 2;
-          this.liveUserBase = Math.max(3400, Math.min(4500, this.liveUserBase + delta));
-          const el = document.getElementById('liveUserCount');
-          if (el) el.innerText = this.liveUserBase.toLocaleString();
-        }, 4000);
       },
 
       renderSidebar() {
@@ -2275,62 +2162,6 @@
         }
       },
 
-      openAddModal() {
-        const modal = document.getElementById('addSiteModal');
-        const card = document.getElementById('modalCard');
-        if (!modal || !card) return;
-
-        modal.classList.remove('hidden');
-        setTimeout(() => {
-          modal.classList.remove('opacity-0');
-          card.classList.remove('scale-95');
-        }, 10);
-        document.getElementById('formTitle')?.focus();
-      },
-
-      closeAddModal() {
-        const modal = document.getElementById('addSiteModal');
-        const card = document.getElementById('modalCard');
-        if (!modal || !card) return;
-
-        modal.classList.add('opacity-0');
-        setTimeout(() => {
-          modal.classList.add('hidden');
-          document.getElementById('addSiteForm')?.reset();
-        }, 150);
-      },
-
-      handleAddSiteSubmit(e) {
-        e.preventDefault();
-        const name = document.getElementById('formTitle').value.trim();
-        let url = document.getElementById('formUrl').value.trim();
-        const category = document.getElementById('formCategory').value;
-        const region = document.getElementById('formRegion').value || 'global';
-
-        if (!name || !url) return;
-
-        if (!/^https?:\/\//i.test(url)) {
-          url = 'https://' + url;
-        }
-
-        const newSite = {
-          id: 'custom_' + Date.now(),
-          name,
-          url,
-          category,
-          region,
-          status: 'new',
-          isFavorite: false
-        };
-
-        this.sites.unshift(newSite);
-        this.saveStorage();
-        this.closeAddModal();
-        this.renderSidebar();
-        this.renderFeed();
-        this.showToast(`✨ "${name}" saved to SR Play!`, 'success');
-      },
-
       resetFilters() {
         this.currentCategory = 'all';
         this.searchQuery = '';
@@ -2369,9 +2200,6 @@
               search.focus();
               search.select();
             }
-          }
-          if (e.key === 'Escape') {
-            this.closeAddModal();
           }
         });
       },
